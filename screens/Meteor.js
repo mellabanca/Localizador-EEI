@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import {Alert, Text, View, SafeAreaView, FlatList, Image, ImageBackground, Dimensions, StyleSheet, StatusBar} from "react-native";
+import {Alert, Text, View, SafeAreaView, FlatList, Image,
+        ImageBackground, Dimensions, StyleSheet, StatusBar} from "react-native";
 import axios from "axios";
 
 export default class MeteorScreen extends Component{
