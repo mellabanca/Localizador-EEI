@@ -25,18 +25,17 @@ export default class IssLocationScreen extends Component{
 
     getIssLocation = () => {
         axios
-        .get("https://api.wheretheiss.at/v1/satellites/25544")
-        .then(response => {
-            this.setState({
-                location: response.data
+            .get("https://api.wheretheiss.at/v1/satellites/25544")
+            .then(response => {
+                this.setState({ location: response.data })
             })
             .catch(error => {
                 Alert.alert(error.message)
             })
-        })
     }
 
     render(){
+        this.getIssLocation();
         if(Object.keys(this.state.location).length === 0){
             return(
                 <View style = {styles.loadingLocation}>
