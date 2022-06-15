@@ -25,7 +25,7 @@ export default class IssLocationScreen extends Component{
 
     getIssLocation = () => {
         axios
-            .get("https://api.wheretheiss.at/v1/satellites/25544")
+            .get("http://api.wheretheiss.at/v1/satellites/25544")
             .then(response => {
                 this.setState({ location: response.data })
             })
